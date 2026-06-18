@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    max-height: 200px;
+}
