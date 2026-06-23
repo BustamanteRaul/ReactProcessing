@@ -20,6 +20,12 @@ const TABS = [
     Icon: IconList,
     path: "/4",
   },
+  {
+    id: "5",
+    label: "Sketch 5",
+    Icon: IconList,
+    path: "/5",
+  },
 ];
 
 const pathToId = {
@@ -27,6 +33,7 @@ const pathToId = {
   "/2": "2",
   "/3": "3",
   "/4": "4",
+  "/5": "5",
 };
 
 function IconList({ className }) {

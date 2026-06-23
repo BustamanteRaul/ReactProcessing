@@ -3,6 +3,7 @@ import Screen1 from "../pages/Screen1";
 import Screen2 from "../pages/Screen2";
 import Screen3 from "../pages/Screen3";
 import Screen4 from "../pages/Screen4";
+import Screen5 from "../pages/Screen5";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/4",
     element: <Screen4 />,
+  },
+  {
+    path: "/5",
+    element: <Screen5 />,
   },
 ]);
 
