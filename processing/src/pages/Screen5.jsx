@@ -1,6 +1,6 @@
+import { useRef } from "react";
 import Sketch from "react-p5";
 import Navbar from "../components/Navbar";
-import { useRef } from "react";
 
 let timer = 0; // frame counter
 const phases = ["red", "yellow", "green"];
@@ -17,6 +17,18 @@ export default function Screen4() {
   };
 
   const draw = (p5) => {
+    p5.fill(55, 0, 0);
+    p5.noStroke();
+    p5.ellipse(200, 100, 50, 50);
+
+    p5.fill(55, 55, 0);
+    p5.noStroke();
+    p5.ellipse(200, 200, 50, 50);
+
+    p5.fill(0, 55, 0);
+    p5.noStroke();
+    p5.ellipse(200, 300, 50, 50);
+
     timer++;
     if (pedRequestRef.current) {
       pedRequestRef.current = false;
@@ -31,13 +43,14 @@ export default function Screen4() {
     }
     if (phase === "red") {
       p5.fill(255, 0, 0);
+      p5.ellipse(200, 100, 50, 50);
     } else if (phase === "yellow") {
       p5.fill(255, 255, 0);
+      p5.ellipse(200, 200, 50, 50);
     } else if (phase === "green") {
       p5.fill(0, 255, 0);
+      p5.ellipse(200, 300, 50, 50);
     }
-    p5.noStroke();
-    p5.ellipse(200, 200, 50, 50);
   };
 
   return (
